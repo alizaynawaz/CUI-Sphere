@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/eventRegisterHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Event Registered"
+        android:layout_marginTop="40dp"
+        android:textSize="20sp"
+        android:textColor="@color/blue"
+        android:fontFamily="@font/bold"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp" /> <!-- Corrected this line -->
+
+    <ImageView
+        android:id="@+id/eventImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="20dp"
+        android:contentDescription="Event Image"
+        android:scaleType="centerCrop"
+        android:src="@drawable/icon_tick" />
+
+    <Button
+        android:id="@+id/search_for_other_event"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search for other events"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/reg"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/blue"
+        android:drawableRight="@drawable/search_white_ic"
+        android:drawablePadding="8dp"
+        android:paddingEnd="16dp"
+        android:layout_marginBottom="20dp"/> <!-- Corrected this line -->
+
+</LinearLayout>
+
+

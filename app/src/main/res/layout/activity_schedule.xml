@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:backgroundTint="@color/white">
+
+    <!-- Date and Notification Icon -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:id="@+id/todayText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Today"
+            android:fontFamily="@font/reg"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#333333" />
+
+        <!-- Use layout_weight to push the ImageView to the right -->
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/notification_ic" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/dateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tuesday, 20 November 2024"
+        android:fontFamily="@font/reg"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:paddingBottom="16dp" />
+
+    <!-- Days and Date Circle Buttons -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <!-- Sample Day Button (Selected Date) -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="50dp"
+                android:layout_height="80dp"
+                android:text="Thu\n26"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:fontFamily="@font/reg"
+                android:textStyle="bold"
+                android:background="@drawable/rounded_button_background"
+                android:gravity="center"
+                android:layout_marginEnd="20dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="50dp"
+                android:layout_height="80dp"
+                android:text="Fri\n27"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:fontFamily="@font/reg"
+                android:textStyle="bold"
+                android:background="@drawable/rounded_button_background"
+                android:gravity="center"
+                android:layout_marginEnd="20dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="50dp"
+                android:layout_height="80dp"
+                android:text="Mon\n30"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:background="@drawable/rounded_button_background"
+                android:fontFamily="@font/reg"
+                android:gravity="center"
+                android:layout_marginEnd="20dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="50dp"
+                android:layout_height="80dp"
+                android:text="Tues\n31"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/reg"
+                android:background="@drawable/rounded_button_background"
+                android:gravity="center"
+                android:layout_marginEnd="20dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="50dp"
+                android:layout_height="80dp"
+                android:text="Wed\n01"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/reg"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:background="@drawable/rounded_button_background"
+                android:gravity="center"/>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+    <!-- Timeline View with Events -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <!-- Existing Event: Speech -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:id="@+id/time_Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="06:00 am"
+                android:fontFamily="@font/reg"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:textColor="#555555" />
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="60dp"
+                android:background="#3B5998" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="68dp"
+                android:padding="8dp"
+                android:background="#A7D8B8"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/event_Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Speech"
+                    android:fontFamily="@font/reg"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:id="@+id/timeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="09:45 am"
+                android:fontFamily="@font/reg"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:textColor="#555555" />
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="60dp"
+                android:background="#3B5998" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="68dp"
+                android:padding="8dp"
+                android:background="#F9A7B1 "
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/event_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cricket Match"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/reg"
+                    android:textStyle="bold"
+                    android:textColor="#000000" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!-- New Event: Meeting -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:id="@+id/timeTextMeeting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11:00 am"
+                android:fontFamily="@font/reg"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:textColor="#555555" />
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="60dp"
+                android:background="#FF6347" /> <!-- Red -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="68dp"
+                android:padding="8dp"
+                android:background="#FF6F61"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/event_title_meeting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Games"
+                    android:fontFamily="@font/reg"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!-- New Event: Workout -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:id="@+id/timeTextWorkout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="01:00 pm"
+                android:fontFamily="@font/reg"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:textColor="#555555" />
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="60dp"
+                android:background="#32CD32" /> <!-- Green -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="68dp"
+                android:padding="8dp"
+                android:background="#D0A6E0"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/event_title_workout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Open mic"
+                    android:fontFamily="@font/reg"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#000000" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!-- New Event: Lunch -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:id="@+id/timeTextLunch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="02:30 pm"
+                android:textSize="14sp"
+                android:fontFamily="@font/reg"
+                android:textStyle="bold"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:textColor="#555555" />
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="60dp"
+                android:background="#FFD700" /> <!-- Yellow -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="68dp"
+                android:padding="8dp"
+                android:background="#A3D3F7"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/event_title_lunch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Badminton Competition"
+                    android:fontFamily="@font/reg"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>
+

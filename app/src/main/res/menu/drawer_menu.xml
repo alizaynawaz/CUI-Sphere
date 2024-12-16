@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_profile"
+        android:title="Profile"
+        android:icon="@drawable/profile_ic" />
+    <item
+        android:id="@+id/menu_notifications"
+        android:title="Notifications"
+        android:icon="@drawable/ic_notification" />
+    <item
+        android:id="@+id/menu_calendar"
+        android:title="Calendar"
+        android:icon="@drawable/ic_calender" />
+    <item
+        android:id="@+id/menu_bookmark"
+        android:title="Bookmark"
+        android:icon="@drawable/ic_bookmark" />
+    <item
+        android:id="@+id/menu_schedule"
+        android:title="Schedule"
+        android:icon="@drawable/ic_schedule" />
+    <item
+        android:id="@+id/menu_settings"
+        android:title="Settings"
+        android:icon="@drawable/ic_setting" />
+    <item
+        android:id="@+id/menu_help"
+        android:title="Help &amp; FAQ"
+        android:icon="@drawable/ic_help" />
+    <item
+        android:id="@+id/menu_sign_out"
+        android:title="Sign Out"
+        android:icon="@drawable/ic_sign_out" />
+</menu>

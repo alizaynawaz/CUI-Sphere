@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F9FA"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back_arrow_ic"
+        android:padding="8dp"
+        android:layout_gravity="start" />
+
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/bold"
+        android:gravity="center"
+        android:text="Profile"
+        android:textColor="@color/blue"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/profile_picture"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/gray"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:id="@+id/profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aliza Nawaz"
+        android:fontFamily="@font/bold"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/editbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Profile"
+        android:fontFamily="@font/reg"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:drawableStart="@drawable/ic_edit"
+        android:textColor="@color/blue"
+        android:padding="12dp"
+        android:drawablePadding="8dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:elevation="2dp"
+        android:background="@drawable/edit_button_background"
+        android:backgroundTintMode="src_in" />
+
+    <TextView
+        android:id="@+id/about_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About Me"
+        android:fontFamily="@font/bold"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginTop="24dp"
+        />
+
+
+    <TextView
+        android:id="@+id/about_me_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enjoy your favorite hobbies and simply post them to your friends..."
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/reg"
+        android:textColor="@color/gray"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp">
+
+        <TextView
+            android:id="@+id/interests"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Interests"
+            android:fontFamily="@font/bold"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_alignParentStart="true" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/change_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change"
+            android:drawableStart="@drawable/ic_edit"
+            android:fontFamily="@font/reg"
+            android:background="@drawable/edit_button_background"
+            android:textAllCaps="false"
+            android:textColor="@color/blue"
+            android:backgroundTint="@color/white"
+            android:drawablePadding="4dp"
+            android:padding="8dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBaseline="@id/interests"
+            android:elevation="2dp" />
+    </RelativeLayout>
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chip_group_interests"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp">
+
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_gaming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Games"
+            android:fontFamily="@font/reg"
+            android:backgroundTint="@color/colorGaming"
+            app:chipStrokeColor="@color/gray"
+            app:chipStrokeWidth="1dp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_movies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Movies"
+            app:chipBackgroundColor="@color/colorMovies"
+            android:fontFamily="@font/reg"
+            app:chipStrokeColor="@color/gray"
+            app:chipStrokeWidth="1dp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_music"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Music"
+            app:chipBackgroundColor="@color/colorMusic"
+            android:fontFamily="@font/reg"
+            app:chipStrokeColor="@color/gray"
+            app:chipStrokeWidth="1dp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_art"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Art"
+            app:chipBackgroundColor="@color/colorArt"
+            android:fontFamily="@font/reg"
+            app:chipStrokeColor="@color/gray"
+            app:chipStrokeWidth="1dp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_concerts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Concerts"
+            app:chipBackgroundColor="@color/colorConcerts"
+            android:fontFamily="@font/reg"
+            app:chipStrokeColor="@color/gray"
+            app:chipStrokeWidth="1dp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_online"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Others"
+            android:fontFamily="@font/reg"
+            app:chipBackgroundColor="@color/colorOnline"
+            app:chipStrokeColor="@color/gray"
+            app:chipStrokeWidth="1dp" />
+
+    </com.google.android.material.chip.ChipGroup>
+
+</LinearLayout>
+
+

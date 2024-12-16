@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Back"
+        android:src="@drawable/back_arrow_ic"
+        android:padding="8dp"
+        android:importantForAccessibility="yes"
+        android:clickable="true" />
+
+    <!-- ScrollView for Privacy Policy Content -->
+
+    <TextView
+        android:id="@+id/tvPrivacyTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/bold"
+        android:text="Privacy Policy"
+        android:textColor="@color/blue"
+        android:textSize="20sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tvPrivacyTitle"
+        android:layout_marginTop="16dp"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Main Heading: Introduction -->
+            <TextView
+                android:id="@+id/tvHeadingIntro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Introduction"
+                android:textSize="18sp"
+                android:textColor="@color/blue"
+                android:fontFamily="@font/bold"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tvIntroContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Built the Find hotel app as a Commercial app. This SERVICE is provided by and is intended for use as is. This page is used to inform visitors regarding our policies with the collection, use, and disclosure of Personal Information if anyone decided to use our Service."
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:fontFamily="@font/reg"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Main Heading: Information Collection and Use -->
+            <TextView
+                android:id="@+id/tvHeadingInfoCollection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Information Collection and Use"
+                android:textSize="18sp"
+                android:textColor="@color/blue"
+                android:fontFamily="@font/bold"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tvInfoCollectionContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="For a better experience, while using our Service, we may require you to provide us with certain personally identifiable information. The information that we request will be retained by us and used as described in this privacy policy."
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:fontFamily="@font/reg"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Main Heading: Log Data -->
+            <TextView
+                android:id="@+id/tvHeadingLogData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Log Data"
+                android:textSize="18sp"
+                android:textColor="@color/blue"
+                android:fontFamily="@font/bold"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tvLogDataContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="We want to inform you that whenever you use our Service, in a case of an error in the app we collect data and information (through third party products) on your phone called Log Data. This Log Data may include information such as your device Internet Protocol (“IP”) address, device name, operating system version, the configuration of the app when utilizing our Service, the time and date of your use of the Service, and other statistics."
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:fontFamily="@font/reg"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Main Heading: Cookies -->
+            <TextView
+                android:id="@+id/tvHeadingCookies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cookies"
+                android:textSize="18sp"
+                android:textColor="@color/blue"
+                android:fontFamily="@font/bold"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tvCookiesContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cookies are files with a small amount of data that are commonly used as anonymous unique identifiers."
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:fontFamily="@font/reg"
+                android:layout_marginBottom="16dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+
+

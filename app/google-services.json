@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "604331685248",
+    "project_id": "cui-sphere",
+    "storage_bucket": "cui-sphere.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:604331685248:android:e52d460389a92ec1dffd65",
+        "android_client_info": {
+          "package_name": "com.example.fyp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCghuPcA4SG-GA0m5l90NDyRd6x42HIAkE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

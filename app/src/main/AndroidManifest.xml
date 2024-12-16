@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Internet permission -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FYP"
+        tools:targetApi="31">
+        <activity
+            android:name=".EventSubmit"
+            android:exported="false" />
+        <activity
+            android:name=".NotificationScreen"
+            android:exported="false" />
+        <activity
+            android:name=".CommentScreen"
+            android:exported="false" />
+        <activity
+            android:name=".MusicFesScreen"
+            android:exported="false" />
+        <activity
+            android:name=".Setting"
+            android:exported="false" />
+        <activity
+            android:name=".SideDrawer"
+            android:exported="false" />
+        <activity
+            android:name=".PrivacyPolicy"
+            android:exported="false" />
+        <activity
+            android:name=".FAQScreen"
+            android:exported="false" />
+        <activity
+            android:name=".Schedule"
+            android:exported="false" />
+        <activity
+            android:name=".EventActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Event"
+            android:exported="false" />
+        <activity
+            android:name=".ExploreEvents"
+            android:exported="false" />
+        <activity
+            android:name=".HorticultureSocietyReg"
+            android:exported="false" />
+        <activity
+            android:name=".MediaSocietyReg"
+            android:exported="false" />
+        <activity
+            android:name=".DramaticSocietyReg"
+            android:exported="false" />
+        <activity
+            android:name=".ComputerSciSocietyReg"
+            android:exported="false" />
+        <activity
+            android:name=".SportsSocietyReg"
+            android:exported="false" />
+        <activity
+            android:name=".LiterarySocietyReg"
+            android:exported="false" />
+        <activity
+            android:name=".MediaSocietyScreen"
+            android:exported="false" />
+        <activity
+            android:name=".HorticultureSocietyScreen"
+            android:exported="false" />
+        <activity
+            android:name=".ComputerSocietyScreen"
+            android:exported="false" />
+        <activity
+            android:name=".LiterarySocietyScreen"
+            android:exported="false" />
+        <activity
+            android:name=".SportsSocietyScreen"
+            android:exported="false" />
+        <activity
+            android:name=".DramaSocietyScreen"
+            android:exported="false" />
+        <activity
+            android:name=".Profile"
+            android:exported="false" />
+        <activity
+            android:name=".Societies"
+            android:exported="false" />
+        <activity
+            android:name=".HomeScreen"
+            android:exported="false" />
+        <activity
+            android:name=".EditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Forgot_Password"
+            android:exported="false" />
+        <activity
+            android:name=".New_Password"
+            android:exported="false" />
+        <activity
+            android:name=".Verify_Password"
+            android:exported="false" />
+        <activity
+            android:name=".SignUp"
+            android:exported="false" />
+        <activity
+            android:name=".SignIn"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

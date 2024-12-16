@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue">#115DA6</color>
+    <color name="gray">#808080</color>
+    <color name="primary">#1976D2</color>
+    <color name="chip_background_color">#F1F3F4</color>
+    <color name="colorGaming">#FF7043</color>  <!-- Lighter Orange for Gaming -->
+    <color name="colorMovies">#42A5F5</color>  <!-- Lighter Blue for Movies -->
+    <color name="colorMusic">#AB47BC</color>   <!-- Lighter Purple for Music -->
+    <color name="colorArt">#7E57C2</color>     <!-- Lighter Indigo for Art -->
+    <color name="colorConcerts">#EF5350</color> <!-- Lighter Red for Concerts -->
+    <color name="colorOnline">#66BB6A</color>  <!-- Lighter Green for Online -->
+
+
+</resources>

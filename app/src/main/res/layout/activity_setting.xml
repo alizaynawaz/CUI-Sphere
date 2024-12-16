@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Back"
+                android:src="@drawable/back_arrow_ic"
+                android:padding="8dp"
+                android:importantForAccessibility="yes"
+                android:clickable="true" />
+
+            <TextView
+                android:id="@+id/tvSettingsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Settings"
+                android:textSize="24sp"
+                android:textColor="@color/blue"
+                android:fontFamily="@font/bold"
+                android:layout_toEndOf="@id/btnBack"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="24dp" />
+        </RelativeLayout>
+
+        <!-- Account Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_background"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Account"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/bold"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/editProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Edit profile"
+                android:drawableLeft="@drawable/profile_ic"
+                android:fontFamily="@font/reg"
+                android:drawablePadding="10dp"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:background="?attr/selectableItemBackground" />
+
+            <TextView
+                android:id="@+id/security"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Security"
+                android:drawableLeft="@drawable/ic_security"
+                android:fontFamily="@font/reg"
+                android:drawablePadding="10dp"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:background="?attr/selectableItemBackground" />
+
+            <TextView
+                android:id="@+id/notifications"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Notifications"
+                android:drawableLeft="@drawable/notification_ic"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/reg"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:background="?attr/selectableItemBackground" />
+
+            <TextView
+                android:id="@+id/privacyPolicy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Privacy Policy"
+                android:drawableLeft="@drawable/ic_privacy_policy"
+                android:drawablePadding="10dp"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/reg"
+                android:background="?attr/selectableItemBackground" />
+        </LinearLayout>
+
+        <!-- Support & About Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_background"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Support &amp; About"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/bold"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/faq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FAQ"
+                android:drawableLeft="@drawable/ic_help"
+                android:drawablePadding="10dp"
+                android:padding="12dp"
+                android:fontFamily="@font/reg"
+                android:textSize="16sp"
+                android:background="?attr/selectableItemBackground" />
+
+            <TextView
+                android:id="@+id/helpSupport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Help &amp; Support"
+                android:drawableLeft="@drawable/ic_help_support"
+                android:drawablePadding="10dp"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/reg"
+                android:background="?attr/selectableItemBackground" />
+
+            <TextView
+                android:id="@+id/termsPolicies"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Terms and Policies"
+                android:drawableLeft="@drawable/ic_term"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/reg"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:background="?attr/selectableItemBackground" />
+        </LinearLayout>
+
+        <!-- Actions Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_background"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Actions"
+                android:textColor="@color/black"
+                android:fontFamily="@font/bold"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/reportProblem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Report a problem"
+                android:drawableLeft="@drawable/ic_report_problem"
+                android:drawablePadding="10dp"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/reg"
+                android:background="?attr/selectableItemBackground" />
+
+            <TextView
+                android:id="@+id/sign_out"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sign out"
+                android:drawableLeft="@drawable/ic_sign_out"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/reg"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:background="?attr/selectableItemBackground" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

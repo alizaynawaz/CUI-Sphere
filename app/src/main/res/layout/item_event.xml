@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <!-- Image for the event -->
+    <ImageView
+        android:id="@+id/eventImage"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@drawable/event_img" />
+
+    <!-- Vertical layout for date and title -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="16dp">
+
+        <!-- Date of the event -->
+        <TextView
+            android:id="@+id/eventDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15 July - Wed - 2:00PM"
+            android:fontFamily="@font/reg"
+            android:textSize="12sp"
+            android:textColor="@color/blue" />
+
+        <!-- Title of the event -->
+        <TextView
+            android:id="@+id/eventTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Event Title"
+            android:fontFamily="@font/reg"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black" />
+        <TextView
+            android:id="@+id/eventTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3:00" />
+    </LinearLayout>
+
+</LinearLayout>

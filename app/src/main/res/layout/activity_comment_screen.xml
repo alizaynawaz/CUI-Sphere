@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:background="@color/white"
+android:padding="8dp">
+
+<!-- Header Section -->
+ <TextView
+    android:id="@+id/tvCommentsHeader"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Comments"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    android:fontFamily="@font/bold"
+    android:gravity="center"
+    android:padding="12dp"
+    android:textColor="@color/blue" />
+
+
+ <View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="#E0E0E0" />
+
+<!-- Comments Section -->
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:paddingTop="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- First Comment -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:padding="8dp">
+
+            <!-- User Profile Image -->
+            <ImageView
+                android:id="@+id/ivUser1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_user"
+                android:background="@drawable/circle_background"
+                android:layout_alignParentStart="true"
+                android:layout_marginEnd="8dp" />
+
+            <!-- Username -->
+            <TextView
+                android:id="@+id/tvUsername1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AliSana"
+                android:textStyle="bold"
+                android:fontFamily="@font/reg"
+                android:layout_toEndOf="@id/ivUser1"
+                android:layout_marginStart="8dp"
+                android:textSize="18sp"
+                android:textColor="@color/black" />
+
+            <!-- Time -->
+            <TextView
+                android:id="@+id/tvTime1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 month ago"
+                android:fontFamily="@font/reg"
+                android:textSize="14sp"
+                android:textColor="#808080"
+                android:layout_alignBaseline="@id/tvUsername1"
+                android:layout_alignParentEnd="true" />
+
+            <!-- Comment Text -->
+            <TextView
+                android:id="@+id/tvComment1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Impressive! Thought it seems the drag feature could be improved. But overall it looks incredible."
+                android:textSize="16sp"
+                android:layout_below="@id/tvUsername1"
+                android:layout_toEndOf="@id/ivUser1"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/reg"
+                android:textColor="@color/black" />
+
+            <!-- Reply Link -->
+            <TextView
+                android:id="@+id/tvReply1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reply"
+                android:textSize="16sp"
+                android:textColor="@color/blue"
+                android:fontFamily="@font/reg"
+                android:layout_below="@id/tvComment1"
+                android:layout_toEndOf="@id/ivUser1"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="15dp" />
+
+            <!-- Heart Icon -->
+            <ImageView
+                android:id="@+id/ivHeart1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/like_ic"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/tvTime1"
+                android:layout_marginTop="20dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:padding="8dp">
+
+            <!-- User Profile Image -->
+            <ImageView
+                android:id="@+id/ivUser2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/icon_user"
+                android:background="@drawable/circle_background"
+                android:layout_alignParentStart="true"
+                android:layout_marginEnd="8dp" />
+
+            <!-- Username -->
+            <TextView
+                android:id="@+id/tvUsername2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ammad"
+                android:textStyle="bold"
+                android:fontFamily="@font/reg"
+                android:layout_toEndOf="@id/ivUser2"
+                android:layout_marginStart="8dp"
+                android:textSize="18sp"
+                android:textColor="@color/black" />
+
+            <!-- Time -->
+            <TextView
+                android:id="@+id/tvTime2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 week ago"
+                android:fontFamily="@font/reg"
+                android:textSize="14sp"
+                android:textColor="#808080"
+                android:layout_alignBaseline="@id/tvUsername2"
+                android:layout_alignParentEnd="true" />
+
+            <!-- Comment Text -->
+            <TextView
+                android:id="@+id/tvComment2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Impressive! Thought it seems the drag feature could be improved. But overall it looks incredible."
+                android:textSize="16sp"
+                android:layout_below="@id/tvUsername2"
+                android:layout_toEndOf="@id/ivUser2"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/reg"
+                android:textColor="@color/black" />
+
+            <!-- Reply Link -->
+            <TextView
+                android:id="@+id/tvReply2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reply"
+                android:textSize="16sp"
+                android:textColor="@color/blue"
+                android:fontFamily="@font/reg"
+                android:layout_below="@id/tvComment2"
+                android:layout_toEndOf="@id/ivUser2"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="15dp" />
+
+            <!-- Heart Icon -->
+            <ImageView
+                android:id="@+id/ivHeart2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/like_ic"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/tvTime2"
+                android:layout_marginTop="20dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:padding="8dp">
+
+            <!-- User Profile Image -->
+            <ImageView
+                android:id="@+id/ivUser3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_user"
+                android:background="@drawable/circle_background"
+                android:layout_alignParentStart="true"
+                android:layout_marginEnd="8dp" />
+
+            <!-- Username -->
+            <TextView
+                android:id="@+id/tvUsername3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aliza"
+                android:textStyle="bold"
+                android:fontFamily="@font/reg"
+                android:layout_toEndOf="@id/ivUser3"
+                android:layout_marginStart="8dp"
+                android:textSize="18sp"
+                android:textColor="@color/black" />
+
+            <!-- Time -->
+            <TextView
+                android:id="@+id/tvTime3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 week ago"
+                android:fontFamily="@font/reg"
+                android:textSize="14sp"
+                android:textColor="#808080"
+                android:layout_alignBaseline="@id/tvUsername3"
+                android:layout_alignParentEnd="true" />
+
+            <!-- Comment Text -->
+            <TextView
+                android:id="@+id/tvComment3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Impressive! Thought it seems the drag feature could be improved. But overall it looks incredible."
+                android:textSize="16sp"
+                android:layout_below="@id/tvUsername3"
+                android:layout_toEndOf="@id/ivUser3"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/reg"
+                android:textColor="@color/black" />
+
+            <!-- Reply Link -->
+            <TextView
+                android:id="@+id/tvReply3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reply"
+                android:textSize="16sp"
+                android:textColor="@color/blue"
+                android:fontFamily="@font/reg"
+                android:layout_below="@id/tvComment3"
+                android:layout_toEndOf="@id/ivUser3"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="15dp" />
+
+            <!-- Heart Icon -->
+            <ImageView
+                android:id="@+id/ivHeart3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/like_ic"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/tvTime3"
+                android:layout_marginTop="20dp" />
+        </RelativeLayout>
+
+        <!-- Add more comments below in the same style -->
+    </LinearLayout>
+</ScrollView>
+
+<!-- Add Comment Section -->
+ <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="8dp">
+
+    <!-- User Profile Image -->
+    <ImageView
+        android:id="@+id/ivUserInput"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/profile_picture"
+        android:background="@drawable/circle_background"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="8dp" />
+
+    <!-- Add Comment Input -->
+    <EditText
+        android:id="@+id/etAddComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Add a comment..."
+        android:padding="12dp"
+        android:layout_toEndOf="@id/ivUserInput"
+        android:layout_marginEnd="48dp"
+        android:background="@drawable/rounded_edittext_background"
+        android:textColor="@color/black" />
+
+    <ImageButton
+        android:id="@+id/btn_emoji"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_emoji"
+        android:background="@null"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="Emoji button" />
+
+</RelativeLayout>
+</LinearLayout>
+
